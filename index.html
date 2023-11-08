@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {    
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      cursor:pointer;
+      transition: all 0.3s;
+      border:20px;
+      border-style: solid;
+      border-color:slategray;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+    .container:hover{
+      transform: scale(1.1);
+    }
+    .item:hover{
+      transform:scale(1.1);
+    }
+    .item{
+      background-color: azure;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .red{
+      background-color: red;  
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .white1{
+      background-color: azure;
+      grid-column: span 3;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .white2{
+      background-color: azure;
+      grid-row:span 2;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .white3{
+      background-color: azure;
+      grid-row: span 2;
+      grid-column: span 2;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .blue{
+      background-color: blue;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .white4{
+      background-color: azure;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .yellow{
+      background-color: darkgoldenrod;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    .black{
+      background-color: black;
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item red"></div>
+   <div class="item white1"></div>  
+
+     <div class="item white2"></div>
+     <div class="item white3"></div>
+     <div class="item blue"></div>
+     <div class="item white4"></div>
+   
+     <div class="item"></div>
+     <div class="item yellow"></div>
+     <div class="item black"></div>
+
+
+  </div>
+</body>
+
+</html>
